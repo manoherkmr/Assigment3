@@ -1,0 +1,6 @@
+<div>
+  
+  <button class="btn btn-primary"  (click)="logClick()">Display Details</button>
+  <br>
+  <p *ngFor="let item of secretParagraphList ;  let i = index "   [style.color]="i>=4 ? 'blue' :'black'" >{{ item }}   </p>
+</div>
